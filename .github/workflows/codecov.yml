@@ -1,0 +1,15 @@
+name: codecov
+codecov:
+  notify:
+    url: "https://ins-pipeline.qiniu.io/codecov"
+    branches':
+      - master
+      - dev
+      - staging
+    threshold': 1%
+    flags:
+      - backend
+      - frontend
+    base: "parent"
+    only_pulls: false
+    paths: "*/**/*"
